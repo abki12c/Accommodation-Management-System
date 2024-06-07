@@ -1,6 +1,6 @@
 # About
 
-This is a project about managing an Accomodation System, like Booking.com . It comprises of backend and frontend components. 
+This is a project about managing an Accommodation System, like Booking.com . It comprises of backend and frontend components. 
 
 ## Backend
 The backend component are the servers handling the requests for the accomodations, including booking, reviewing and filtering rooms. It follows the Map Reduce framework where there's a Master node receiving the requests from the user and the manager, and delegates the requests to the Worker nodes, each of which saves a number of rooms. There's also a Reducer Node that is used to aggregate the results from the Worker nodes when filtering rooms, and send it back to the Master node.
