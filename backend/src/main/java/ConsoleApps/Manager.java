@@ -241,8 +241,6 @@ public class Manager {
 
                     System.out.println("Image has been sent");
 
-                    String acknowledgment = inputStream.readUTF();
-
                     socket.close();
                     outputStream.close();
                     inputStream.close();

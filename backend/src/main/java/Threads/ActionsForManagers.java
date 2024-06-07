@@ -75,6 +75,8 @@ public class ActionsForManagers extends Thread{
 
                 }
 
+
+
                 Properties appProps = new Properties();
                 appProps.load(new FileInputStream("././././config.properties"));
                 int workersNumber = Integer.parseInt(appProps.getProperty("WORKERS"));
@@ -172,7 +174,6 @@ public class ActionsForManagers extends Thread{
 
                     // Wait for acknowledgment from worker
                     String acknowledgment = inputStreamWorker.readUTF();
-                    outputStream.writeUTF("ACK");
 
                 }
             }
