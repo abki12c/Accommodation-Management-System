@@ -10,6 +10,11 @@ All the servers are multithreaded to handle multiple requests at the same time, 
 The backend system also uses active replication. This means that all the Worker nodes also save the rooms of all the other Worker nodes in a HashMap containing all the replica rooms for every other Worker node. This way when a Worker Node is down, the requests are rerouted to a Worker node that is up and running, and thus using the the replica rooms. Also for every request received by the Master node, the replica rooms are also updated.
 
 
+Below is an image a graphical representation of how filtering works using the Map Reduce framework
+
+![image](assets/search.png)
+
+
 ## Frontend
 
 As for the frontend component there's 2 cli apps and one android app.
