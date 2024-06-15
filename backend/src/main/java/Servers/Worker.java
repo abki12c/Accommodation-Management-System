@@ -84,37 +84,8 @@ public class Worker{
                 String requestType = inputStream.readUTF();
                 System.out.println("New request of type " + requestType + " is being processed on a new thread");
 
-                switch (requestType){
-                    case "SAVE_ROOM":
-                        Thread workerThread = new ActionsForWorkers(outputStream,inputStream,this,"SAVE_ROOM");
-                        workerThread.start();
-                        break;
-                    case "GET_ROOMS":
-                        Thread workerThread2 = new ActionsForWorkers(outputStream,inputStream,this,"GET_ROOMS");
-                        workerThread2.start();
-                        break;
-                    case "GET_BOOKINGS":
-                        Thread workerThread3 = new ActionsForWorkers(outputStream,inputStream,this,"GET_BOOKINGS");
-                        workerThread3.start();
-                        break;
-                    case "FILTER_ROOMS":
-                        Thread workerThread4 = new ActionsForWorkers(outputStream,inputStream, this, "FILTER_ROOMS");
-                        workerThread4.start();
-                        break;
-                    case "CHECK_BOOK_ROOM":
-                        Thread workerThread5 = new ActionsForWorkers(outputStream,inputStream,this,"CHECK_BOOK_ROOM");
-                        workerThread5.start();
-                        break;
-                    case "SAVE_REVIEW":
-                        Thread workerThread6 = new ActionsForWorkers(outputStream,inputStream,this,"SAVE_REVIEW");
-                        workerThread6.start();
-                        break;
-
-                    case "IS_UP":
-                        Thread workerThread7 = new ActionsForWorkers(outputStream,inputStream,this,"IS_UP");
-                        workerThread7.start();
-                        break;
-                }
+                Thread thread = new ActionsForWorkers(outputStream,inputStream,this,requestType);
+                thread.start();
 
             }
         }catch (IOException ioException){
