@@ -67,3 +67,14 @@ When you add a room you are asked to select an image from the images directory. 
 After that you can either use the User cli app or the android app to search, book and review a room.
 
 Make sure to edit the config file on the machines that you use the Manager and User cli apps. In the Android app you can edit it when first opening the app.
+
+
+# Screenshots
+
+<img src="assets/manager.png" width="300px"/> <img src="assets/worker.png" width="290px" align="right"  />
+
+
+Search room filters            |  Room description
+:-------------------------:|:-------------------------:
+<img src="assets/phone_search.png" width="200px"/> |  <img src="assets/phone_room_desc.png" width="200px"/>
+
