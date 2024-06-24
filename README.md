@@ -73,7 +73,7 @@ Make sure to edit the config file on the machines that you use the Manager and U
 
 Manager console app           |  Worker console
 :-------------------------:|:-------------------------:
-<img src="assets/manager.png" width="300px"/>|   <img src="assets/worker.png" width="300px" align="right"  />
+<img src="assets/manager.png" width="400px"/>|   <img src="assets/worker.png" width="500px" align="right"  />
 
 
 
