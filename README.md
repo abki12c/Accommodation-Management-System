@@ -12,7 +12,7 @@ The backend system also uses active replication. This means that all the Worker 
 
 Below is a graphical representation of how filtering works using the Map Reduce framework
 
-![image](assets/search.png)
+![image](https://github.com/abki12c/Accommodation-Management-System/assets/58307243/2230ad85-98dd-4b54-906d-e0a636a48313)
 
 
 ## Frontend
