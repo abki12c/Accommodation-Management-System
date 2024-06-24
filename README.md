@@ -73,12 +73,12 @@ Make sure to edit the config file on the machines that you use the Manager and U
 
 Manager console app           |  Worker console
 :-------------------------:|:-------------------------:
-<img src="assets/manager.png" width="400px"/>|   <img src="assets/worker.png" width="500px" align="right"  />
+<img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/f932d437-7d18-4e0b-bf55-0dd9d9522ca5" width="400px"/>|   <img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/3588d3fd-f43a-428e-87af-0038e6446131" width="500px" align="right"  />
 
 
 
 
 Search room filters            |  Room description
 :-------------------------:|:-------------------------:
-<img src="assets/phone_search.png" width="300px"/> |  <img src="assets/phone_room_desc.png" width="300px"/>
+<img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/d4f64b38-273d-495c-913b-0abe54418ead" width="300px"/> |  <img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/efa6c1ae-9a21-44f7-8bb9-aca2407af931" width="300px"/>
 
