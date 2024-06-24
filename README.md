@@ -71,7 +71,11 @@ Make sure to edit the config file on the machines that you use the Manager and U
 
 # Screenshots
 
-<img src="assets/manager.png" width="300px"/> <img src="assets/worker.png" width="300px" align="right"  />
+Manager console app           |  Worker console
+:-------------------------:|:-------------------------:
+<img src="assets/manager.png" width="300px"/>|   <img src="assets/worker.png" width="300px" align="right"  />
+
+
 
 
 Search room filters            |  Room description
