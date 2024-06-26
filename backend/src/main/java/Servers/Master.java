@@ -4,6 +4,7 @@ import Data.UserSendTask;
 import Threads.ActionsForManagers;
 import Threads.ActionsForUsers;
 import java.io.*;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -54,38 +55,25 @@ public class Master {
      * @return true if the worker is up and running and false otherwise
      */
     public static boolean getHealthCheck(String ip, int port){
-        Socket socket = null;
-        ObjectOutputStream out = null;
-        ObjectInputStream in = null;
-        try {
-            socket = new Socket(ip,port);
-            socket.setSoTimeout(1200);
-            out = new ObjectOutputStream(socket.getOutputStream());
-            in = new ObjectInputStream(socket.getInputStream());
+        try (Socket socket = new Socket()) {
+            socket.connect(new InetSocketAddress(ip, port), 500); // 500 milliseconds timeout
+            socket.setSoTimeout(500); // 500 milliseconds timeout for read
 
-            out.writeUTF("IS_UP");
-            out.flush();
+            try (ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
+                 ObjectInputStream in = new ObjectInputStream(socket.getInputStream())) {
 
-            String message = in.readUTF();
-            out.writeUTF("ACK");
-            out.flush();
+                out.writeUTF("IS_UP");
+                out.flush();
 
-            // Return true if the worker responds with "ACK"
-            return message.equals("ACK");
-        }catch (Exception e){
-            return false;
-        }finally {
-            // Always close the socket if it was successfully created
-            if (socket != null) {
-                try {
-                    socket.close();
-                    out.close();
-                    in.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                String message = in.readUTF();
+                out.writeUTF("ACK");
+                out.flush();
+
+                return "ACK".equals(message);
             }
-
+        } catch (IOException e) {
+            // Log the exception if needed
+            return false;
         }
 
     }
