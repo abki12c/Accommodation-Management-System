@@ -28,6 +28,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/region_textView"
                 android:layout_width="wrap_content"
@@ -54,6 +55,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/availability_start_date_text"
                 android:layout_width="wrap_content"
@@ -90,6 +92,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/availability_end_date_text"
                 android:layout_width="wrap_content"
@@ -126,6 +129,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/noofpeople_textView"
                 android:layout_width="wrap_content"
@@ -152,6 +156,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/min_price_textView"
                 android:layout_width="wrap_content"
@@ -171,6 +176,7 @@
                 android:inputType="number" />
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/max_price_textView"
                 android:layout_width="wrap_content"
@@ -199,6 +205,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:id="@+id/price_textView"
@@ -234,16 +241,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@color/black"
                 android:id="@+id/min_stars_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="2dp"
-                android:text="Minimum Stars:" />
+                android:text="Minimum Stars:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/current_min_stars"
                 android:layout_width="30dp"

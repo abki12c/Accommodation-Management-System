@@ -24,6 +24,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:textSize="16sp"
             android:textColor="@color/black"
             android:id="@+id/arrival_date_text"
             android:layout_width="wrap_content"
@@ -62,6 +63,7 @@
         android:layout_marginTop="10dp">
 
         <TextView
+            android:textSize="16sp"
             android:textColor="@color/black"
             android:id="@+id/departure_date_text"
             android:layout_width="wrap_content"

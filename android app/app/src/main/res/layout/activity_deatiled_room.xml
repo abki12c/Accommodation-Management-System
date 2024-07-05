@@ -37,6 +37,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/noOfPeople_text"
                 android:layout_width="wrap_content"
@@ -44,6 +45,7 @@
                 android:text="Number of people : " />
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/noofpeople_answer"
                 android:layout_width="wrap_content"
@@ -58,6 +60,7 @@
             android:layout_marginTop="20dp">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/area_text"
                 android:layout_width="wrap_content"
@@ -65,6 +68,7 @@
                 android:text="Area : " />
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/area_answer"
                 android:layout_width="wrap_content"
@@ -79,6 +83,7 @@
             android:layout_marginTop="20dp">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/price_text"
                 android:layout_width="wrap_content"
@@ -86,6 +91,7 @@
                 android:text="Price : " />
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/price_number"
                 android:layout_width="wrap_content"
@@ -100,6 +106,7 @@
             android:layout_marginTop="20dp">
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/availability_text"
                 android:layout_width="wrap_content"
@@ -107,6 +114,7 @@
                 android:text="Availability : " />
 
             <TextView
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:id="@+id/dates"
                 android:layout_width="wrap_content"
