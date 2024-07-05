@@ -80,5 +80,5 @@ Manager console app           |  Worker console
 
 Search room filters            |  Room description
 :-------------------------:|:-------------------------:
-<img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/d4f64b38-273d-495c-913b-0abe54418ead" width="300px"/> |  <img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/efa6c1ae-9a21-44f7-8bb9-aca2407af931" width="300px"/>
+<img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/82ef4fc6-00ee-4d20-b5ec-9be0d87b5087" width="300px"/> |  <img src="https://github.com/abki12c/Accommodation-Management-System/assets/58307243/07eacfc5-f84a-4620-94fa-2f0dfe6f9bc2" width="300px"/>
 
