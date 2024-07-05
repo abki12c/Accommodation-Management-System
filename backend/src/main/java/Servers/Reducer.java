@@ -58,7 +58,7 @@ public class Reducer extends Thread{
      * @param mapID the map ID of the search function
      */
     public synchronized static void updateResultsNumber(int mapID){
-        if(Reducer.resultsPerMapID.isEmpty()){
+        if(!Reducer.resultsPerMapID.containsKey(mapID)){
             Reducer.resultsPerMapID.put(mapID,1);
         }else {
             int currentResultsNumber = Reducer.resultsPerMapID.get(mapID);

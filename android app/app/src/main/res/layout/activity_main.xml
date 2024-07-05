@@ -8,6 +8,7 @@ android:orientation="vertical"
 tools:context=".Activities.SearchActivity">
 
 <TextView
+    android:textColor="@color/black"
     android:id="@+id/select_option"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -19,25 +20,28 @@ tools:context=".Activities.SearchActivity">
 </TextView>
 
 <Button
+    android:textColor="@color/white"
     android:id="@+id/search_activity_btn"
     android:layout_width="wrap_content"
     android:layout_height="70sp"
     android:layout_gravity="center"
     android:layout_marginTop="100dp"
+    android:background="@drawable/button"
     android:text="START"
     android:textSize="20dp"
     >
 </Button>
 
 <Button
+    android:textColor="@color/white"
+    android:background="@drawable/button"
     android:id="@+id/edit_config_activity"
     android:layout_width="wrap_content"
     android:layout_height="70sp"
     android:layout_gravity="center"
     android:layout_marginTop="70dp"
-    android:text="Edit config file"
-    android:textSize="20dp"
-    android:drawableStart="@drawable/baseline_settings_24"
+    android:text="  Edit config file  "
+    android:textSize="20sp"
     >
 </Button>
 

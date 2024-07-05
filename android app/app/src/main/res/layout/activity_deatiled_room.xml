@@ -13,12 +13,13 @@
         android:paddingHorizontal="20dp">
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/room_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_gravity="center"
-            android:textSize="25sp"
+            android:textSize="35sp"
             android:text="Room Name"
             />
 
@@ -26,7 +27,7 @@
             android:id="@+id/room_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             />
 
@@ -36,12 +37,14 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/noOfPeople_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Number of people : " />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/noofpeople_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,12 +58,14 @@
             android:layout_marginTop="20dp">
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/area_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Area : " />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/area_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,12 +79,14 @@
             android:layout_marginTop="20dp">
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/price_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Price : " />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/price_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,12 +100,14 @@
             android:layout_marginTop="20dp">
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/availability_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Availability : " />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/dates"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -124,6 +133,7 @@
             </TextView>
 
             <RatingBar
+                android:theme="@style/RatingBar"
                 android:id="@+id/rating_bar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -142,6 +152,8 @@
             android:orientation="horizontal">
 
             <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button"
                 android:id="@+id/book_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -149,6 +161,8 @@
                 android:text="Book" />
 
             <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button"
                 android:id="@+id/review_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
