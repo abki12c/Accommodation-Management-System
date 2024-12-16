@@ -15,7 +15,7 @@ import java.util.Properties;
 /**
  * class for the reducer sending the result of the search functionality
  */
-public class Reducer extends Thread{
+public class Reducer{
     ServerSocket serverSocket;
     Socket connection;
     public static HashMap<Integer, ArrayList<Room>> filters = new HashMap<>();
